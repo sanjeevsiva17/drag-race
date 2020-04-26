@@ -4,7 +4,7 @@ import Draggable from "react-draggable"
 export default class Drag extends Component {
     render = () => {
         return (
-            <div className="container">
+            // <div className="container">
                 <Draggable bounds="parent">
                     <div
                         style={{
@@ -25,7 +25,7 @@ export default class Drag extends Component {
                     </div>
                 </Draggable>
 
-            </div>
+            // </div>
         )
     }
 }
