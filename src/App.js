@@ -41,7 +41,7 @@ class App extends Component {
       num: num + 1
     })
 
-    let index = num - 1 > 0 ? num - 1 : 0;
+    let index = num;
 
     return (
       <Draggable
