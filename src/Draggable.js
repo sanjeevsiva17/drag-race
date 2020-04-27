@@ -2,10 +2,15 @@ import React, { Component } from "react"
 import Draggable from "react-draggable"
 
 export default class Drag extends Component {
+    handleStart = (e) => { 
+        e.stopPropagation(); 
+    }
+    
     render = () => {
         return (
             // <div className="container">
-                <Draggable bounds="parent">
+                <Draggable bounds="parent" onStart={this.handleStart}
+                >
                     <div
                         style={{
                             width: this.props.width || "200px",
