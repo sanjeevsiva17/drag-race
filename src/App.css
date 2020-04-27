@@ -14,3 +14,7 @@
 .uk-checkbox {
   margin-bottom: 10px;
 }
+
+body > #root > div {
+  height: 100vh;
+}
